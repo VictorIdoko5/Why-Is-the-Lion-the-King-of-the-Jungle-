@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lion Categories | Lion Authority</title>
+    <meta name="description" content="Browse lion articles by category.">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Lion Authority</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<!-- SEARCH -->
+<section class="section1">
+    <h3>🔍 Search Articles</h3>
+
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search within category..." 
+        class="search-box"
+    >
+</section>
+
+<!-- CATEGORY BUTTONS -->
+<section class="section">
+    <h3>📚 Categories</h3>
+
+    <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="leadership">Leadership</button>
+        <button class="filter-btn" data-filter="battle">Battles</button>
+        <button class="filter-btn" data-filter="science">Science</button>
+        <button class="filter-btn" data-filter="myth">Myths</button>
+    </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="section">
+    <h3>Articles</h3>
+
+    <div class="grid">
+
+        <div class="card" data-category="leadership myth" data-title="lion king jungle">
+            <a href="Why Lion is King.html">
+                <h4>Why Lions Are Called King of the Jungle</h4>
+                <p>Science and symbolism behind the title.</p>
+            </a>
+        </div>
+
+        <div class="card" data-category="battle" data-title="lion vs tiger">
+            <a href="lion-vs-tiger.html">
+                <h4>Lion vs Tiger: Who Wins?</h4>
+                <p>Strength and strategy comparison.</p>
+            </a>
+        </div>
+
+        <div class="card" data-category="science leadership" data-title="lion pride teamwork">
+            <a href="lion-pride.html">
+                <h4>The Power of Lion Prides</h4>
+                <p>Teamwork and survival advantage.</p>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Lion Authority</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
